@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cypher.fi">
+    <meta name="keywords" content="cypher">
+
+    <title>Cypher</title>
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" href="images/favicon.png">
+  </head>
+  <body class="layout-centered bg-gray">
+
+
+    <!-- Main Content -->
+    <main class="main-content text-center pb-lg-8">
+      <div class="container">
+
+        <h1 class="display-1 text-muted mb-7">Page Not Found</h1>
+        <p class="lead">Seems you're looking for something that doesn't exist.</p>
+        <br>
+        <button class="btn btn-secondary w-150 mr-2" type="button" onclick="window.history.back();">Go back</button>
+        <a class="btn btn-secondary w-150" href="https://cypher.fi">Return Home</a>
+
+      </div>
+    </main><!-- /.main-content -->
+
+    <!-- Scripts -->
+    <script src="js/page.min.js"></script>
+    <script src="js/script.js"></script>
+
+	 <noscript id="deferred-styles">
+      <link rel="stylesheet" type="text/css" href="assets/css/page.css"/>
+	  <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>	
+  </body>
+</html>
+
+  
